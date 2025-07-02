@@ -1,10 +1,19 @@
 fn main() {
-	let x=1000;
-	let y="Programming";
-	println!("x={}", x);
-	println!("y={}", y);
-	let x=1100;
-	println!("x={}", x);
-	println!("y={}", y);
-}	
-	
+    let a = 10.0;
+    let b = 5.0;
+    let operator = '+';
+
+    let result = match operator {
+        '+' => a + b,
+        '-' => a - b,
+        '*' => a * b,
+        '/' => a / b,
+        _ => {
+            println!("Invalid operator");
+            return;
+        }
+    };
+
+    println!("Result: {}", result);
+}
+
